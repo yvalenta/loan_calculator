@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  calculadora-spa:
+    build: .
+    container_name: calculadora-spa
+    restart: unless-stopped
+    ports:
+      - "3010:80" # El contenedor expone el puerto 80, hosteará en el 3010
